@@ -22,11 +22,11 @@ This is a lightweight server for managing your LND node.
 ## Getting started
 
 ### Requirements
-You need a running LND instance ([0.16.0-beta](https://github.com/lightningnetwork/lnd/releases/tag/v0.16.0-beta)) with Bitcoin Core as backup on a Ubuntu machine. npm version is 9.5.0 and node version is v18.15.0.
+You need a running LND instance ([0.16.0-beta](https://github.com/lightningnetwork/lnd/releases/tag/v0.16.0-beta)) with Bitcoin Core as backend on a Ubuntu machine. npm version is 9.5.0 and node version is v18.15.0.
 
 ### Clone the repository
 
-    git clone
+    git clone https://github.com/ncois/lnd-interface.git
     cd lnd-interface
 
 ### Deploy the server
