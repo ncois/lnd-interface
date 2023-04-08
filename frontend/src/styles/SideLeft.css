@@ -1,0 +1,27 @@
+.side-left {
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  padding: 20px;
+}
+
+.sideleft-fit {
+  /* Allow the value to wrap and expand to fit the container */
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.sideleft-plus {
+  border: none;
+  border-radius: 100px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../assets/plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

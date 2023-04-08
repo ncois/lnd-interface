@@ -1,0 +1,47 @@
+.invoices {
+  position: relative;
+  top: 10px;
+  left: 401px;
+}
+
+.invoices-sort-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.invoices-sort-controls label {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.invoices-sort-controls select {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fff;
+  color: #333;
+}
+
+.invoices-sort-controls select:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px #0077ff33;
+}
+
+.invoices-button {
+  border: none;
+  margin-left: 2rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #63be7c, #b58dde);
+  padding: 5px 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 115px;
+  font-weight: bold;
+}

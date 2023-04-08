@@ -1,0 +1,87 @@
+.openchannel-popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 1000;
+}
+
+.openchannel-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+
+}
+
+.openchannel-close-icon-popup {
+    border: none;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/close.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.openchannel-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.openchannel-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.openchannel-form input[type="text"],
+.openchannel-form input[type="number"] {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200%;
+    font-size: 16px;
+}
+
+.openchannel-form input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.openchannel-form button[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.openchannel-form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.openchannel-error {
+    color: #ff0000; /* red */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

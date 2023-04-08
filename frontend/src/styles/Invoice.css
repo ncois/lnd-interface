@@ -1,0 +1,76 @@
+.invoice-container {
+    background-color: #bec6ec;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 700px;
+}
+
+.invoice-button {
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #98a6e8, #b58dde);
+    padding: 5px 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: small;
+}
+
+.invoice-popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 1000;
+}
+
+.invoice-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+
+}
+
+.invoice-close-icon-popup {
+    border: none;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/close.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.invoice-active-icon {
+    color: green;
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+
+.invoice-inactive-icon {
+    color: red;
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+
+.invoice-waiting-icon {
+    color: orange;
+    font-size: 1em;
+    margin-right: 0.5em;
+}

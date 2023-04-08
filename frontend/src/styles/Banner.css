@@ -1,0 +1,116 @@
+.banner-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bec6ec;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.banner-title {
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  color: #667eea;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.banner-refresh-button {
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #667eea, #764ba2);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.banner-hard-refresh-button {
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #ea6666, #764ba2);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.banner-refresh-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/refresh.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner-ok-icon {
+  border: none;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/ok.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.banner-error-icon {
+  border: none;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/error.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.banner-alert-icon {
+  border: none;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/alert.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.banner-close-icon {
+  border: none;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/close.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.banner-loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.banner-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: black;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

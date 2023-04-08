@@ -1,0 +1,28 @@
+.unspents {
+  position: relative;
+  top: 10px;
+  left: 401px;
+}
+
+.unspents-receive-button {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #63be7c, #b58dde);
+  padding: 5px 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 75px;
+  font-weight: bold;
+}
+
+.unspents-send-button {
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #b58dde, #e8a798);
+  padding: 5px 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 75px;
+  font-weight: bold;
+}

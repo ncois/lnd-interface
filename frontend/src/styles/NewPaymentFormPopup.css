@@ -1,0 +1,124 @@
+.newpayment-popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 1000;
+}
+
+.newpayment-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+
+}
+
+.newpayment-close-icon-popup {
+    border: none;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/close.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.newpayment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newpayment-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.newpayment-form input[type="text"],
+.newpayment-form input[type="number"] {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200%;
+    font-size: 16px;
+}
+
+.newpayment-form input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.newpayment-form button[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: pre;
+}
+
+.newpayment-form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.newpayment-form .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.newpayment-error {
+    color: #ff0000;
+    /* red */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newpayment-sort-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.newpayment-sort-controls label {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.newpayment-sort-controls select {
+    margin-left: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #fff;
+    color: #333;
+}
+
+.newpayment-sort-controls select:focus {
+    outline: none;
+    border-color: #0077ff;
+    box-shadow: 0 0 0 2px #0077ff33;
+}

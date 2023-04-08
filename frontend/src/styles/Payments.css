@@ -1,0 +1,64 @@
+.payments {
+  position: relative;
+  top: 10px;
+  left: 401px;
+}
+
+.payments-sort-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.payments-sort-controls label {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.payments-sort-controls select {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fff;
+  color: #333;
+}
+
+.payments-sort-controls select:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px #0077ff33;
+}
+
+.payments-button {
+  border: none;
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #63be7c, #b58dde);
+  padding: 5px 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 50px;
+  font-weight: bold;
+}
+
+.payments-hard-refresh-button {
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #ea6666, #764ba2);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.payments-loading {
+  opacity: 0.5;
+  pointer-events: none;
+}

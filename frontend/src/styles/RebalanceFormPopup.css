@@ -1,0 +1,219 @@
+.rebalance-popup-container {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 1000;
+}
+
+.rebalance-popup-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+
+}
+
+.rebalance-close-icon-popup {
+    border: none;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/close.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.rebalance-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.rebalance-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.rebalance-form input[type="text"],
+.rebalance-form input[type="number"] {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200%;
+    font-size: 16px;
+}
+
+.rebalance-form input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.rebalance-form button[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.rebalance-form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.rebalance-form .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.rebalance-error {
+    color: #ff0000;
+    /* red */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rebalance-ratio-line {
+    width: 300px;
+    position: relative;
+    height: 10px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,
+            rgb(255, 0, 0),
+            rgb(255, 128, 0),
+            rgb(255, 255, 0),
+            rgb(128, 255, 0),
+            rgb(0, 255, 0),
+            rgb(128, 255, 0),
+            rgb(255, 255, 0),
+            rgb(255, 128, 0),
+            rgb(255, 0, 0));
+
+    background-position: left;
+    margin-right: 11px;
+    top: 5px;
+}
+
+.rebalance-ratio-point {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid #0c0996;
+}
+
+.rebalance-ratio-arrow-outgoing {
+    position: relative;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent black;
+}
+
+.rebalance-ratio-arrow-incoming {
+    position: relative;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent black transparent transparent;
+}
+
+.rebalance-ratio-line-neutral {
+    opacity: 0.5;
+}
+
+.rebalance-choose-outgoing-channel-button {
+    margin-left: 16px;
+    height: 30px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    background-color: #a3d8e0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rebalance-choose-lasthop-node-button {
+    margin-left: 16px;
+    height: 30px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    background-color: #f28af2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rebalance-input{
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 10%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.rebalance-button {
+    padding: 10px;
+    background-color: #a3d8e0;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+.rebalance-button[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.rebalance-error {
+    color: #ff0000; /* red */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
