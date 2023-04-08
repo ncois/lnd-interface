@@ -69,11 +69,7 @@ npm i
 npm start
 ````
 
-The server is now listening at port 3001.
-```
-curl http://localhost:3001
-````
-This should return a json indicating if the db updated successfully:
+The server is now listening at port 3001. ```curl http://localhost:3001``` should return a json indicating if the db updated successfully:
 
 ```
 {
